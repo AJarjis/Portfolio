@@ -1,0 +1,19 @@
+# - name: Home
+#   link: /
+#   logo: fa-home
+
+- name: Portfolio
+  link: /
+  logo: fa-laptop-code
+  
+- name: Experience
+  link: /skill
+  logo: fa-toolbox
+
+- name: Blog
+  link: /blog
+  logo: fa-keyboard
+
+- name: Contact
+  link: /skill
+  logo: fa-envelope

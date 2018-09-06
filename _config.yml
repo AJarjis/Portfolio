@@ -1,0 +1,43 @@
+# Personal Details
+title: Ali Jarjis
+description: >-
+  # TODO: write a description
+url: "www.ajarjis.com"
+author:  Ali Jarjis
+email: ali-jarjis@hotmail.com
+  #TODO: add logo
+logo: ""
+
+social:
+  name: Ali Jarjis
+  links:
+    -https://github.com/AJarjis
+    -https://twitter.com/a_jarjis
+    -https://www.linkedin.com/in/ajarjis/
+
+twitter: 
+  username: A_Jarjis
+  card: summary
+
+# Site Specific Details
+lang: en
+timezone: GB
+
+#TODO: add google verification
+google_site_verification: 
+
+collections:
+  works:
+  skills:
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Ali Jarjis"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

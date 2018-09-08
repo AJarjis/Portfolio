@@ -1,6 +1,13 @@
+html, body {
+    height: 100%;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    font-family: "Heebo", "Helvetica Neue", Helvetica, sans-serif;
     background-color: var(--white);
+    color: var(--black) !important;
+    letter-spacing: .1rem;
 }
 
 a {
@@ -19,12 +26,13 @@ a:hover, a:focus, input[type=submit]:hover, input[type=submit]:focus {
    -webkit-transition: 0.2s ease-in-out;
 }
 
-.text-white {
-    color: var(--white) !important;
+h2 {
+    letter-spacing: .25rem;
 }
   
 
 /* Header CSS */
+
 .navbar-dark {
     color: var(--white);
 } 
@@ -58,7 +66,9 @@ footer a:hover, footer a:focus{
 }
 
 .card:hover {
-    box-shadow: 0 8px 17px 0 rgba(74,20,140,0.2),0 6px 20px 0 rgba(74,20,140,0.19);
+    cursor: pointer;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    color: var(--light_purple);
 }
 
 .card-title {

@@ -1,12 +1,12 @@
-<h1 class="text-center">Portfolio</h1>
-
+<h2 class="text-center">PORTFOLIO</h2>
+<br/>
 <div class="card-deck">
     {% for work in site.works %}
-        <div class="card">
-            <img class="card-img-top" src="{{ work.imagePath }}" alt="{{ work.title }}">
-            <div class="card-body">
-                <h5 class="card-title">{{ work.title}}</h5>
-            </div>
+    <div class="card">
+        <img class="card-img-top" src="{{ work.imagePath }}" alt="{{ work.title }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ work.title}}</h5>
         </div>
+    </div>
     {% endfor %}
 </div>

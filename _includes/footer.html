@@ -1,15 +1,15 @@
 <footer class="container-flex navbar-dark bg-dark">
     <div class="d-flex justify-content-center">
         {% for item in site.data.social %}
-            <a href="{{ item.link }}" class="p-3">
-                <i class="fab {{ item.logo }} fa-3x"></i>
+            <a href="{{ item.link }}" class="p-3" title="{{ item.name }}">
+                <i class="fab {{ item.logo }} fa-2x"></i>
             </a>
         {% endfor %}
     </div>
     <div class="d-flex justify-content-center">
-        <p>
+        <p class="text-center"><small>
             &copy; {{ "now" | date: "%Y" }} {{ site.author }} All Rights Reserved | Website Designed by
             <a href="{{ site.url }}" target="_blank">{{ site.author }}</a>
-        </p>
+        </small></p>
     </div>
 </footer>

@@ -2,6 +2,7 @@
 title: Ali Jarjis
 description: >-
   # TODO: write a description
+baseurl: ""
 url: "www.ajarjis.com"
 author:  Ali Jarjis
 email: ali-jarjis@hotmail.com
@@ -41,3 +42,6 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+sass:
+  sass_dir: _sass

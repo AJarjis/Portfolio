@@ -1,7 +1,3 @@
-# - name: Home
-#   link: /
-#   logo: fa-home
-
 - name: Portfolio
   link: /
   logo: fa-laptop-code
@@ -15,5 +11,5 @@
   logo: fa-keyboard
 
 - name: Contact
-  link: /skill
+  link: /contact
   logo: fa-envelope

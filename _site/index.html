@@ -23,7 +23,7 @@
 <meta name="twitter:site" content="@A_Jarjis" />
 <meta name="twitter:creator" content="@Ali Jarjis" />
 <script type="application/ld+json">
-{"name":"Ali Jarjis","description":"TODO: write a description","author":{"@type":"Person","name":"Ali Jarjis"},"@type":"WebSite","url":"http://localhost:4000/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/"},"name":"Ali Jarjis"},"headline":"AJarjis","sameAs":"-https://github.com/AJarjis -https://twitter.com/a_jarjis -https://www.linkedin.com/in/ajarjis/","@context":"http://schema.org"}</script>
+{"name":"Ali Jarjis","description":"TODO: write a description","author":{"@type":"Person","name":"Ali Jarjis"},"@type":"WebSite","url":"http://localhost:4000/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ali Jarjis"},"headline":"AJarjis","sameAs":"-https://github.com/AJarjis -https://twitter.com/a_jarjis -https://www.linkedin.com/in/ajarjis/","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -43,9 +43,9 @@
     <header>
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
         <!-- Logo -->
-        <!-- <a class="navbar-brand" href="#">
-            <h1>Ali Jarjis</h1>
-        </a> -->
+        <a class="navbar-brand" href="http://localhost:4000">
+            <!-- <img src="/assets/images/logo.png" width="30" height="30" alt=""> -->
+        </a>
 
         <!-- Hamburger Icon -->
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navbarNav"
@@ -89,7 +89,7 @@
 </header>
     <style>
     .jumbotron {
-        background-image: url("/assets/images/banner.jpg");
+        background-image: url("/assets/images/hero.jpg");
         color: var(--white);
     }
 </style>
@@ -105,31 +105,39 @@
 
 <main class="container mt-4 mb-5">
     <h2 class="text-center">PORTFOLIO</h2>
-<br/>
-<div class="card-deck">
+<br />
+<div class="row">
+    <!-- TODO: Display 6 at a time -->
     
-    <div class="card rounded">
-        <img class="card-img-top" src="/assets/images/works/enigma.png" alt="Enigma Machine">
-        <div class="card-body border-top">
-            <h5 class="card-title">Enigma Machine</h5>
+    <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card rounded h-100">
+            <img class="card-img-top" src="/assets/images/works/southnorfolkspeechtherapy.png" alt="South Norfolk Speech Therapy">
+            <div class="card-body border-top text-center">
+                <h5 class="card-title">South Norfolk Speech Therapy</h5>
+            </div>
         </div>
     </div>
     
-    <div class="card rounded">
-        <img class="card-img-top" src="/assets/images/works/kapalua.png" alt="Kapalua Maui Beach House">
-        <div class="card-body border-top">
-            <h5 class="card-title">Kapalua Maui Beach House</h5>
+    <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card rounded h-100">
+            <img class="card-img-top" src="/assets/images/works/kapalua.png" alt="Kapalua Maui Beach House">
+            <div class="card-body border-top text-center">
+                <h5 class="card-title">Kapalua Maui Beach House</h5>
+            </div>
         </div>
     </div>
     
-    <div class="card rounded">
-        <img class="card-img-top" src="/assets/images/works/southnorfolkspeechtherapy.png" alt="South Norfolk Speech Therapy">
-        <div class="card-body border-top">
-            <h5 class="card-title">South Norfolk Speech Therapy</h5>
+    <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card rounded h-100">
+            <img class="card-img-top" src="/assets/images/works/enigma.png" alt="Enigma Machine">
+            <div class="card-body border-top text-center">
+                <h5 class="card-title">Enigma Machine</h5>
+            </div>
         </div>
     </div>
     
 </div>
+    
 </main>
 
     <footer class="container-flex navbar-dark bg-dark">

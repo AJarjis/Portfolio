@@ -1,12 +1,16 @@
 <h2 class="text-center">PORTFOLIO</h2>
-<br/>
-<div class="card-deck">
-    {% for work in site.works %}
-    <div class="card rounded">
-        <img class="card-img-top" src="{{ work.imagePath }}" alt="{{ work.title }}">
-        <div class="card-body border-top">
-            <h5 class="card-title">{{ work.title}}</h5>
+<br />
+<div class="row">
+    <!-- TODO: Display 6 at a time -->
+    {% for work in site.works reversed limit: 3 %}
+    <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card rounded h-100">
+            <img class="card-img-top" src="{{ work.imagePath }}" alt="{{ work.title }}">
+            <div class="card-body border-top text-center">
+                <h5 class="card-title">{{ work.title}}</h5>
+            </div>
         </div>
     </div>
     {% endfor %}
 </div>
+    

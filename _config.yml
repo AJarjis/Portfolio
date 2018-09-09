@@ -6,8 +6,7 @@ baseurl: ""
 url: "www.ajarjis.com"
 author:  Ali Jarjis
 email: ali-jarjis@hotmail.com
-  #TODO: add logo
-logo: ""
+logo: "/assets/images/logo.png"
 
 social:
   name: Ali Jarjis
@@ -42,6 +41,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-
-sass:
-  sass_dir: _sass

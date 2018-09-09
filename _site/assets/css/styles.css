@@ -7,7 +7,6 @@ body {
     font-family: "Heebo", "Helvetica Neue", Helvetica, sans-serif;
     background-color: var(--white);
     color: var(--black) !important;
-    letter-spacing: .1rem;
 }
 
 a {
@@ -62,17 +61,18 @@ footer a:hover, footer a:focus{
 /* Work CSS */
 .card {
     display: block; 
-    margin-bottom: 20px;
-    line-height: 1.42857143;
     border-radius: 2px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
     transition: box-shadow .25s; 
+    background-color: var(--dark_purple);
+    color: var(--white);
+    border: none !important;
 }
 
 .card:hover {
     cursor: pointer;
     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    color: var(--light_purple);
+    font-weight: bold;
 }
 
 .card-title {

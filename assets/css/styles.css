@@ -41,6 +41,10 @@ h2 {
     background-color: var(--black) !important;
 }
 
+.navbar-dark .navbar-toggler  {
+    border-color: var(--dark_purple);
+}
+
 .active {
     color: var(--light_purple) !important;
 }

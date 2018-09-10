@@ -9,6 +9,7 @@ body {
     color: var(--black) !important;
 }
 
+/* Hyperlink CSS */
 a {
     text-decoration: none;
     color: var(--dark_purple);
@@ -27,6 +28,61 @@ a:hover, a:focus, input[type=submit]:hover, input[type=submit]:focus {
 
 h2 {
     letter-spacing: .25rem;
+}
+
+.card-img-top {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+/* 
+    Fancy Button, credit to Vincent Durand 
+    https://codepen.io/onediv/pen/jEmjap
+*/
+.btn {
+    background: var(--light_purple);
+    color: var(--white);
+    border: none;
+    position: relative;
+    height: 50px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--light_purple);
+}
+
+.btn:before, .btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: var(--light_purple);
+    transition: 400ms ease all;
+}
+
+.btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn:hover:before, .btn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
 }
   
 
@@ -62,16 +118,16 @@ footer a:hover, footer a:focus{
 .card {
     display: block; 
     border-radius: 2px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
-    transition: box-shadow .25s; 
-    background-color: var(--dark_purple);
-    color: var(--white);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-color: white;
+    color: var(--dark_purple);
     border: none !important;
 }
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     font-weight: bold;
 }
 

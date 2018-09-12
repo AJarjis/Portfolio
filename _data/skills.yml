@@ -1,0 +1,23 @@
+- name: HTML
+  year: 2015
+  logo: fa-html5
+
+- name: CSS
+  year: 2015
+  logo: fa-css3-alt
+
+- name: Javascript
+  year: 2015
+  logo: fa-js
+
+- name: Java
+  year: 2016
+  logo: fa-java
+
+- name: Python
+  year: 2016
+  logo: fa-python
+
+- name: Android
+  year: 2017
+  logo: fa-android

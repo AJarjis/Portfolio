@@ -9,7 +9,7 @@
     <div class="d-flex justify-content-center">
         <p class="text-center"><small>
             &copy; {{ "now" | date: "%Y" }} {{ site.author }} All Rights Reserved | Website Designed by
-            <a href="{{ site.url }}" target="_blank">{{ site.author }}</a>
+            <a href="{{ site.url | absolute_url }}" target="_blank">{{ site.author }}</a>
         </small></p>
     </div>
 </footer>

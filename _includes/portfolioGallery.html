@@ -1,14 +1,17 @@
 <h2 class="text-center">PORTFOLIO</h2>
 <br />
 <div class="row">
-    <!-- Amout of works in collection-->
+    <!-- Amount of all works -->
     {% assign works_size = site.works | size %}
 
-    <!-- Amount of items to display -->
-    {% assign display_amount = include.amount | default: works_size %}
+    <!-- Amount user wishes to display -->
+    {% assign param_amount = include.amount | default: works_size %}
 
-    <!-- Amount of items to pass in, number must be passed in -->
-    {% for work in site.works reversed limit: display_amount %}
+    <!-- Amount of items to hide -->
+    {% assign display_amount = works_size | minus: param_amount %}
+
+    <!-- Prints cards for each work -->
+    {% for work in site.works reversed offset: display_amount %}
     <div class="col-sm-6 col-md-6 col-lg-4 py-3">
         <a href="{{ work.link}}">
             <div class=" card rounded h-100" style="display:block">
@@ -23,8 +26,13 @@
 </div>
 <br />
 
-{% if works_size != display_amount %}
-    <div class="col-md-12 text-center">
-        <button type="button" class="btn">View More</button>
-    </div>
+<!-- Displays a view more button if cards are available -->
+{% if display_amount > 0 %}
+<div class="col-md-12 text-center">
+    <a href="/portfolio.html">
+        <button type="button" class="btn">
+            View More
+        </button>
+    </a>
+</div>
 {% endif %}

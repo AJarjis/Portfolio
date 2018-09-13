@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 50px;
     font-family: "Heebo", "Helvetica Neue", Helvetica, sans-serif;
     background-color: var(--white);
     color: var(--black) !important;
@@ -26,7 +26,7 @@ a:hover, a:focus, input[type=submit]:hover, input[type=submit]:focus {
    -webkit-transition: 0.2s ease-in-out;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4 {
     letter-spacing: .25rem;
 }
 
@@ -105,6 +105,11 @@ h2, h3, h4, h5 {
 }
 
 /* Footer CSS */
+footer {
+    color: var(--white) !important;
+    background-color: var(--black) !important;
+}
+
 footer a {
     color: var(--white);
     text-decoration: none;
@@ -121,8 +126,9 @@ footer a:hover, footer a:focus{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     background-color: white;
-    color: var(--dark_purple);
+    color: var(--black);
     border: none !important;
+    letter-spacing: .1rem !important;
 }
 
 .card:hover {
@@ -132,6 +138,6 @@ footer a:hover, footer a:focus{
 }
 
 .card-title {
-    margin-top:0px;
+    margin-top: 0px;
     font-weight: 700;
 }

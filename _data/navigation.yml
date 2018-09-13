@@ -1,10 +1,10 @@
 - name: Portfolio
-  link: /portfolio.html
+  link: /
   logo: fa-laptop-code
   
-- name: Skills
-  link: /skill
-  logo: fa-toolbox
+# - name: Skills
+#   link: /skill
+#   logo: fa-toolbox
 
 - name: Blog
   link: /blog

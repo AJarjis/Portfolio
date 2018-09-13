@@ -1,38 +1,40 @@
-<h2 class="text-center">PORTFOLIO</h2>
-<br />
-<div class="row">
-    <!-- Amount of all works -->
-    {% assign works_size = site.works | size %}
+<section>
+    <h2 class="text-center">PORTFOLIO</h2>
+    <br />
+    <div class="row">
+        <!-- Amount of all works -->
+        {% assign works_size = site.works | size %}
 
-    <!-- Amount user wishes to display -->
-    {% assign param_amount = include.amount | default: works_size %}
+        <!-- Amount user wishes to display -->
+        {% assign param_amount = include.amount | default: works_size %}
 
-    <!-- Amount of items to hide -->
-    {% assign display_amount = works_size | minus: param_amount %}
+        <!-- Amount of items to hide -->
+        {% assign display_amount = works_size | minus: param_amount %}
 
-    <!-- Prints cards for each work -->
-    {% for work in site.works reversed offset: display_amount %}
-    <div class="col-sm-6 col-md-6 col-lg-4 py-3">
-        <a href="{{ work.link}}">
-            <div class=" card rounded h-100" style="display:block">
-                <img class="card-img-top img-fluid" src="{{ work.imagePath }}" alt="{{ work.title }}">
-                <div class="card-body border-top text-center">
-                    <h5 class="card-title">{{ work.title}}</h5>
+        <!-- Prints cards for each work -->
+        {% for work in site.works reversed offset: display_amount %}
+        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+            <a href="{{ work.link}}">
+                <div class=" card rounded h-100" style="display:block">
+                    <img class="card-img-top img-fluid" src="{{ work.imagePath }}" alt="{{ work.title }}">
+                    <div class="card-body border-top text-center">
+                        <h5 class="card-title">{{ work.title}}</h5>
+                    </div>
                 </div>
-            </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <br />
+
+    <!-- Displays a view more button if cards are available -->
+    {% if display_amount > 0 %}
+    <div class="col-md-12 text-center">
+        <a href="/portfolio.html">
+            <button type="button" class="btn">
+                View All
+            </button>
         </a>
     </div>
-    {% endfor %}
-</div>
-<br />
-
-<!-- Displays a view more button if cards are available -->
-{% if display_amount > 0 %}
-<div class="col-md-12 text-center">
-    <a href="/portfolio.html">
-        <button type="button" class="btn">
-            View All
-        </button>
-    </a>
-</div>
-{% endif %}
+    {% endif %}
+</section>

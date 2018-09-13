@@ -26,7 +26,7 @@ a:hover, a:focus, input[type=submit]:hover, input[type=submit]:focus {
    -webkit-transition: 0.2s ease-in-out;
 }
 
-h2 {
+h2, h3, h4, h5 {
     letter-spacing: .25rem;
 }
 

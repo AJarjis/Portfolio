@@ -3,9 +3,10 @@
     <br />
     <div class="row mx-auto">
         {% for item in site.data.skills %}
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3" data-toggle="tooltip" data-placement="top" title="{{ item.info }}">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
             <!-- Icon -->
-            <i class="fab {{ item.logo }} fa-5x" onMouseOver="this.style.color='{{item.color}}'" onMouseOut="this.style.color='#1E1E20'"></i>
+            <i class="fab {{ item.logo }} fa-5x" data-toggle="tooltip" data-placement="top" title="{{ item.info }}"
+                onMouseOver="this.style.color='{{item.color}}'" onMouseOut="this.style.color='#1E1E20'"></i>
 
             <!-- Icon Name-->
             <h4 class="mt-3">{{ item.name }}</h4>

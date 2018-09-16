@@ -13,6 +13,8 @@ $(function () {
      * Displays a success message when user submits the contact form.
      */
     $("#contactForm").submit(function (e) {
+        // TODO: perform form validation here
+
         e.preventDefault();
 
         var $form = $(this);

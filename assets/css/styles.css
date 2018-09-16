@@ -19,7 +19,7 @@ body {
 }
 
 .main-container {
-    padding-top: 70px;
+    padding-top: 76px;
     min-height: 100vh; /* will cover the 100% of viewport */
     overflow: hidden;
     display: block;
@@ -80,10 +80,6 @@ a:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(124, 67, 189, 0.5);
 }
 
-/* 
-    Fancy Button, credit to Vincent Durand 
-    https://codepen.io/onediv/pen/jEmjap
-*/
 .btn-primary {
     background: var(--light_purple);
     color: var(--white);
@@ -98,6 +94,11 @@ a:focus {
     cursor: pointer;
     transition: 400ms ease all;
     outline: none;
+}
+
+.modal-header {
+    background-color: var(--black);
+    color: var(--white);
 }
   
 

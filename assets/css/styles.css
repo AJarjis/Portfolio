@@ -19,7 +19,7 @@ body {
 }
 
 .main-container {
-    padding-top: 50px;
+    padding-top: 70px;
     min-height: 100vh; /* will cover the 100% of viewport */
     overflow: hidden;
     display: block;
@@ -68,51 +68,36 @@ h2, h3 {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.5s ease-in-out;
-}  
+}
+
+.form-control:focus {
+    border-color: var(--light_purple);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(124, 67, 189, 0.5);
+}
+
+a:focus {
+    border-color: var(--light_purple);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(124, 67, 189, 0.5);
+}
 
 /* 
     Fancy Button, credit to Vincent Durand 
     https://codepen.io/onediv/pen/jEmjap
 */
-.btn {
+.btn-primary {
     background: var(--light_purple);
     color: var(--white);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: var(--dark_purple);
+}
+
+.btn {
     border: none;
-    position: relative;
-    height: 50px;
-    font-size: 1.6em;
-    padding: 0 2em;
     cursor: pointer;
-    transition: 800ms ease all;
-    outline: none;
-}
-
-.btn:hover {
-    background: var(--white);
-    color: var(--light_purple) !important;
-}
-
-.btn:before, .btn:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 0;
-    background: var(--light_purple);
     transition: 400ms ease all;
-}
-
-.btn:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-
-.btn:hover:before, .btn:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
+    outline: none;
 }
   
 

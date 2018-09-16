@@ -4,22 +4,52 @@
         Message me about your web or mobile project below...
     </h6>
     <br />
-    <form name="contact" action="/thanks.html" netlify>
+    <form name="Contact" onsubmit="submitContactForm(event)" netlify-honeypot="bot-field">
+        <div class="form-group d-none">
+            <strong><label for="fakeField">Don't fill this field:</label></strong>
+            <input name="bot-field" type="text" class="form-control" id="fakeField" />
+        </div>
         <div class="form-group">
             <strong><label for="nameField">Name:</label></strong>
-            <input type="text" class="form-control" id="nameField" placeholder="Your Name..." />
+            <input name="Name" type="text" class="form-control" id="nameField" placeholder="Your Name..." required />
         </div>
         <div class="form-group">
             <strong><label for="emailField">Email Address:</label></strong>
-            <input type="email" class="form-control" id="emailField" placeholder="Your Email Address..." />
+            <input name="Email" type="email" class="form-control" id="emailField" placeholder="Your Email Address..."
+                required />
         </div>
         <div class="form-group">
             <strong><label for="messageField">Message:</label></strong>
-            <textarea class="form-control" id="messageField" rows="10" placeholder="Your Message..."></textarea>
+            <textarea name="Message" class="form-control" id="messageField" rows="10" placeholder="Your Message..."
+                required></textarea>
         </div>
-        <div data-netlify-recaptcha></div>
         <div class="form-group mt-3 text-center">
-            <button type="submit" class="btn btn-lg">Send Message</button>
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
         </div>
     </form>
+
+    <!-- Success message when form is submitted -->
+    <div class="modal fade" id="contactSuccessModal" tabindex="-1" role="dialog" aria-labelledby="contactSuccessModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactSuccessModalLabel">Message Sent</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank you for the message, I'll be replying shortly.
+                </div>
+                <div class="modal-footer">
+                    <a href="/">
+                        <button type="button" class="btn btn-primary">
+                            Return Home
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

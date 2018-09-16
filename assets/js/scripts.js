@@ -16,7 +16,7 @@ $(function () {
         e.preventDefault();
 
         var $form = $(this);
-        $.get($form.attr("action"), $form.serialize()).then(function () {
+        $.post($form.attr("action"), $form.serialize()).done(function () {
             $('#contactSuccessModal').modal('show');
         });
     });

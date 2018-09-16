@@ -5,10 +5,7 @@
     </h6>
     <br />
     <form id="contactForm" name="Contact" netlify-honeypot="bot-field" netlify>
-        <div class="form-group d-none">
-            <strong><label for="fakeField">Don't fill this field:</label></strong>
-            <input name="bot-field" type="text" class="form-control" id="fakeField" />
-        </div>
+        <input name="bot-field" type="hidden" />
         <div class="form-group">
             <strong><label for="nameField">Name:</label></strong>
             <input name="Name" type="text" class="form-control" id="nameField" placeholder="Your Name..." required />

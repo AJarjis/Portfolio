@@ -25,8 +25,13 @@ function setUpCoolScrollEffect() {
 /**
  * Displays a success message when user submits the contact form.
  */
-function submitContactForm(event) {
+function submitContactForm(e) {
     // TODO: perform validation
-    event.preventDefault();
-    $('#contactSuccessModal').modal('show');
+    e.preventDefault();
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize())
+        .done(function () {
+            alert("test");
+            $('#contactSuccessModal').modal('show');
+        });
 }

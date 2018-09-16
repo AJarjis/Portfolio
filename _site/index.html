@@ -40,8 +40,9 @@
 </head>
 
 <body>
-    <header>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <div class="main-container">
+        <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark sps sps--abv">
         <!-- Logo -->
         <!-- <a class="navbar-brand" href="/">
             <img src="/assets/images/logo.png" height="50" alt="">
@@ -57,6 +58,7 @@
         <div class="collapse navbar-collapse" id="navMenu">
             <div class="navbar-nav ml-auto">
                 
+                    
                     <a href="/" class="nav-item nav-link active">
                         <i class="fas fa-laptop-code"></i> 
                         Portfolio
@@ -65,12 +67,14 @@
                         
                     </a>
                 
+                    
                     <a href="/blog" class="nav-item nav-link ">
                         <i class="fas fa-keyboard"></i> 
                         Blog
                         
                     </a>
                 
+                    
                     <a href="/contact" class="nav-item nav-link ">
                         <i class="fas fa-envelope"></i> 
                         Contact
@@ -81,7 +85,7 @@
         </div>
     </nav>
 </header>
-    <style>
+        <style>
     .jumbotron {
         background-image: url("/assets/images/hero.jpg");
         color: var(--white);
@@ -91,7 +95,22 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-color: var(--black);
+        height: 100%;
     }
+
+    /* .sps {
+        transition: all 0.25s ease;
+    }
+
+    .sps--abv {
+        background-color: transparent !important;
+        color: #000 !important;
+    }
+    
+    .sps--blw {
+        background-color: #333 !important;
+        color: #fff !important;
+    }     */
 </style>
 
 <div class="jumbotron jumbotron-fluid text-center">
@@ -100,8 +119,6 @@
         <h1 class="display-3">Ali Jarjis</h1>
         <p class="lead">
             Computer Science student with experience as both a web and mobile developer.
-            <br />
-            View my work here.
         </p>
     </div>
 </div>
@@ -109,6 +126,9 @@
 <main class="container mt-4 mb-5">
     <section>
     <h2 class="text-center">PORTFOLIO</h2>
+    <h6 class="text-center">
+        View my work here...
+    </h6>
     <br />
     <div class="row">
         <!-- Amount of all works -->
@@ -122,7 +142,7 @@
 
         <!-- Prints cards for each work -->
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://www.quotemygoods.com/">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/qmg.jpg" alt="Quote My Goods App">
@@ -133,7 +153,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/AJarjis/Mental-Elixir">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/mentalelixir.jpg" alt="Mental Elixir">
@@ -144,7 +164,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/AJarjis/Lord-of-The-Rings-Text-Auto-Complete">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/lotrAutocomplete.jpg" alt="Lord of the Rings Text Auto Complete">
@@ -155,7 +175,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/sovietbears/VOIP">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/voip.jpg" alt="VOIP System">
@@ -166,7 +186,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/AJarjis/Blackjack">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/blackjack.jpg" alt="Blackjack Game">
@@ -177,7 +197,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/AJarjis/ARM-Cipher">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/armCipher.jpg" alt="ARM Assembly Cipher">
@@ -188,7 +208,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/AJarjis/Palindrome-Script">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/palindrome.jpg" alt="Palindrome Detector Script">
@@ -199,7 +219,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://play.google.com/store/apps/details?id=com.phonehub.prisonvoicemail&hl=en_GB">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/prisonVoicemail.jpg" alt="Prison Voicemail App">
@@ -210,7 +230,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/AJarjis/LazyInvest">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/lazyInvest.jpg" alt="Lazy Invest">
@@ -221,7 +241,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="http://southnorfolkspeechtherapy.co.uk/">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/snst.jpg" alt="South Norfolk Speech Therapy">
@@ -232,7 +252,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://kapalua.netlify.com/html/">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/kapalua.jpg" alt="Kapalua Maui Beach House">
@@ -243,7 +263,7 @@
             </a>
         </div>
         
-        <div class="col-sm-6 col-md-6 col-lg-4 py-3">
+        <div class="card-container scroll_hidden col-sm-6 col-md-6 col-lg-4 py-3" >
             <a href="https://github.com/AJarjis/Enigma-Machine">
                 <div class=" card rounded h-100" style="display:block">
                     <img class="card-img-top img-fluid" src="/assets/images/works/enigmaMachine.jpg" alt="Enigma Machine">
@@ -262,10 +282,13 @@
 </section>
     <section>
     <h2 class="text-center">SKILLS</h2>
+    <h6 class="text-center">
+        Visit each skill for more details...
+    </h6>
     <br />
     <div class="row mx-auto">
         
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
             <!-- Icon -->
             <i class="fab fa-html5 fa-5x" data-toggle="tooltip" data-placement="top" title="Includes experience with Jekyll."
                 onMouseOver="this.style.color='#e34c26'" onMouseOut="this.style.color='#1E1E20'"></i>
@@ -282,7 +305,7 @@
             </h6>
         </div>
         
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
             <!-- Icon -->
             <i class="fab fa-css3-alt fa-5x" data-toggle="tooltip" data-placement="top" title="Includes experience with Sass and Bootstrap."
                 onMouseOver="this.style.color='#563d7c'" onMouseOut="this.style.color='#1E1E20'"></i>
@@ -299,7 +322,7 @@
             </h6>
         </div>
         
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
             <!-- Icon -->
             <i class="fab fa-js fa-5x" data-toggle="tooltip" data-placement="top" title="Includes experience with JQuery and Angular."
                 onMouseOver="this.style.color='#f1e05a'" onMouseOut="this.style.color='#1E1E20'"></i>
@@ -316,9 +339,9 @@
             </h6>
         </div>
         
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
             <!-- Icon -->
-            <i class="fab fa-java fa-5x" data-toggle="tooltip" data-placement="top" title="Includes experience with JSP."
+            <i class="fab fa-java fa-5x" data-toggle="tooltip" data-placement="top" title="Includes experience with JSP and JUnit."
                 onMouseOver="this.style.color='#b07219'" onMouseOut="this.style.color='#1E1E20'"></i>
 
             <!-- Icon Name-->
@@ -333,7 +356,7 @@
             </h6>
         </div>
         
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
             <!-- Icon -->
             <i class="fab fa-python fa-5x" data-toggle="tooltip" data-placement="top" title="Includes experience with Django and Flask."
                 onMouseOver="this.style.color='#3572a5'" onMouseOut="this.style.color='#1E1E20'"></i>
@@ -350,7 +373,7 @@
             </h6>
         </div>
         
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
             <!-- Icon -->
             <i class="fab fa-android fa-5x" data-toggle="tooltip" data-placement="top" title="Includes experience with publishing apps to the Play Store."
                 onMouseOver="this.style.color='#A4C639'" onMouseOut="this.style.color='#1E1E20'"></i>
@@ -370,7 +393,7 @@
     </div>
 </section>
 </main>
-    <footer class="container-flex">
+        <footer class="container-flex">
     <div class="d-flex justify-content-center">
         
             <a href="https://www.linkedin.com/in/ajarjis/" class="p-3" title="LinkedIn">
@@ -393,6 +416,7 @@
         </small></p>
     </div>
 </footer>
+    </div>
 
     <!-- Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
@@ -407,6 +431,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous">
         </script>
+    <script src="/assets/js/isInViewport.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
 </body>
 

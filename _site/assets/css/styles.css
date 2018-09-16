@@ -1,13 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
+ position: relative;
 }
 
 body {
-    padding-top: 50px;
     font-family: "Heebo", "Helvetica Neue", Helvetica, sans-serif;
     background-color: var(--white);
     color: var(--black) !important;
 }
+
+.main-container {
+    padding-top: 50px;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+   }
 
 /* Hyperlink CSS */
 a {
@@ -26,7 +44,7 @@ a:hover, a:focus, input[type=submit]:hover, input[type=submit]:focus {
    -webkit-transition: 0.2s ease-in-out;
 }
 
-h2, h3, h4 {
+h2, h3 {
     letter-spacing: .25rem;
 }
 
@@ -39,6 +57,18 @@ h2, h3, h4 {
     outline: none !important;
     box-shadow: none;
  }
+
+ .scroll_hidden {
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll_visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+}  
 
 /* 
     Fancy Button, credit to Vincent Durand 
@@ -108,6 +138,9 @@ h2, h3, h4 {
 footer {
     color: var(--white) !important;
     background-color: var(--black) !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {

@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark sps sps--abv">
         <!-- Logo -->
         <!-- <a class="navbar-brand" href="/">
             <img src="{{ site.logo }}" height="50" alt="">
@@ -15,10 +15,11 @@
         <div class="collapse navbar-collapse" id="navMenu">
             <div class="navbar-nav ml-auto">
                 {% for item in site.data.navigation %}
-                    <a href="{{ item.link }}" class="nav-item nav-link {% if page.url==item.link %}active{% endif %}">
+                    {% assign url = page.url | split: "." %}
+                    <a href="{{ item.link }}" class="nav-item nav-link {% if url[0]==item.link %}active{% endif %}">
                         <i class="fas {{ item.logo }}"></i> 
                         {{ item.name }}
-                        {% if page.url==item.link %}
+                        {% if url[0]==item.link %}
                             <span class="sr-only">(current)</span>
                         {% endif %}
                     </a>

@@ -23,9 +23,11 @@
 </head>
 
 <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+    <div class="main-container">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+    </div>
 
     <!-- Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
@@ -40,6 +42,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous">
         </script>
+    <script src="/assets/js/isInViewport.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
 </body>
 

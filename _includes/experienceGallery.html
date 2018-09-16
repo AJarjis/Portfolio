@@ -1,9 +1,12 @@
 <section>
     <h2 class="text-center">SKILLS</h2>
+    <h6 class="text-center">
+        Visit each skill for more details...
+    </h6>
     <br />
     <div class="row mx-auto">
         {% for item in site.data.skills %}
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
             <!-- Icon -->
             <i class="fab {{ item.logo }} fa-5x" data-toggle="tooltip" data-placement="top" title="{{ item.info }}"
                 onMouseOver="this.style.color='{{item.color}}'" onMouseOut="this.style.color='#1E1E20'"></i>

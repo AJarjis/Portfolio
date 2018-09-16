@@ -8,6 +8,18 @@ $(function () {
     // Cool scroll effect is run on start up and upon window scroll
     setUpCoolScrollEffect();
     $(window).scroll(setUpCoolScrollEffect);
+
+    /**
+     * Displays a success message when user submits the contact form.
+     */
+    $("#contactForm").submit(function (e) {
+        e.preventDefault();
+
+        var $form = $(this);
+        $.get($form.attr("action"), $form.serialize()).then(function () {
+            $('#contactSuccessModal').modal('show');
+        });
+    });
 })
 
 /**
@@ -20,18 +32,4 @@ function setUpCoolScrollEffect() {
             .removeClass('scroll_hidden')
             .addClass('scroll_visible');
     });
-}
-
-/**
- * Displays a success message when user submits the contact form.
- */
-function submitContactForm(e) {
-    // TODO: perform validation
-    e.preventDefault();
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize())
-        .done(function () {
-            alert("test");
-            $('#contactSuccessModal').modal('show');
-        });
 }

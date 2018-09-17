@@ -6,9 +6,9 @@
 #   link: /skill
 #   logo: fa-toolbox
 
-- name: Blog
-  link: /blog
-  logo: fa-keyboard
+# - name: Blog
+#   link: /blog
+#   logo: fa-keyboard
 
 - name: Contact
   link: /contact

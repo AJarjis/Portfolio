@@ -7,9 +7,10 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
- position: relative;
+    position: relative;
 }
 
 body {
@@ -20,12 +21,12 @@ body {
 
 .main-container {
     padding-top: 76px;
-    min-height: 100vh; /* will cover the 100% of viewport */
+    min-height: 100vh;
     overflow: hidden;
     display: block;
     position: relative;
-    padding-bottom: 100px; /* height of your footer */
-   }
+    padding-bottom: 100px;
+}
 
 /* Hyperlink CSS */
 a {
@@ -33,18 +34,23 @@ a {
     color: var(--dark_purple);
 }
 
-a:hover, a:focus{
+a:hover,
+a:focus {
     color: var(--light_purple);
 }
 
-a:hover, a:focus, input[type=submit]:hover, input[type=submit]:focus {
+a:hover,
+a:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
     text-decoration: none;
     transition: 0.2s ease-in-out;
-   -moz-transition: 0.2s ease-in-out;
-   -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
 }
 
-h2, h3 {
+h2,
+h3 {
     letter-spacing: .25rem;
 }
 
@@ -53,12 +59,13 @@ h2, h3 {
     color: var(--white);
 }
 
-.btn:focus,.btn:active {
+.btn:focus,
+.btn:active {
     outline: none !important;
     box-shadow: none;
- }
+}
 
- .scroll_hidden {
+.scroll_hidden {
     opacity: 0;
     transform: translateY(20%);
     transition: all 0.5s ease-in-out;
@@ -83,10 +90,15 @@ a:focus {
 .btn-primary {
     background: var(--light_purple);
     color: var(--white);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background: var(--dark_purple);
+    transform: translateY(-5%);
+    transition: all 0.2s linear;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
 }
 
 .btn {
@@ -100,19 +112,19 @@ a:focus {
     background-color: var(--black);
     color: var(--white);
 }
-  
+
 
 /* Header CSS */
 
 .navbar-dark {
     color: var(--white);
-} 
+}
 
 .bg-dark {
     background-color: var(--black) !important;
 }
 
-.navbar-dark .navbar-toggler  {
+.navbar-dark .navbar-toggler {
     border-color: var(--dark_purple);
 }
 
@@ -134,16 +146,17 @@ footer a {
     text-decoration: none;
 }
 
-footer a:hover, footer a:focus{
+footer a:hover,
+footer a:focus {
     color: var(--light_purple);
 }
 
 /* Work CSS */
 .card {
-    display: block; 
+    display: block;
     border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     background-color: white;
     color: var(--black);
     border: none !important;
@@ -152,11 +165,27 @@ footer a:hover, footer a:focus{
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     font-weight: bold;
 }
 
 .card-title {
     margin-top: 0px;
     font-weight: 700;
+}
+
+.pulsate {
+    animation: pulsate infinite 1s;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.5;
+    }
 }

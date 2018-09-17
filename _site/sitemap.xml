@@ -6,4 +6,8 @@
 <url>
 <loc>http://localhost:4000/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/admin/</loc>
+<lastmod>2018-09-17T19:57:27+01:00</lastmod>
+</url>
 </urlset>

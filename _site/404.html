@@ -7,6 +7,7 @@
     <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Ali Jarjis" />
     <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>AJarjis Weird Place | Ali Jarjis</title>
@@ -14,16 +15,17 @@
 <meta property="og:title" content="AJarjis Weird Place" />
 <meta name="author" content="Ali Jarjis" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="TODO: write a description" />
-<meta property="og:description" content="TODO: write a description" />
+<meta name="description" content="A “computer scientist” experienced in web and mobile development." />
+<meta property="og:description" content="A “computer scientist” experienced in web and mobile development." />
 <link rel="canonical" href="http://localhost:4000/404.html" />
 <meta property="og:url" content="http://localhost:4000/404.html" />
 <meta property="og:site_name" content="Ali Jarjis" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@A_Jarjis" />
 <meta name="twitter:creator" content="@Ali Jarjis" />
+<meta name="google-site-verification" content="JL4lMlN39qAKOuuJhVV4Wc9mgVVXB3TTBkmrAEATVmU" />
 <script type="application/ld+json">
-{"description":"TODO: write a description","author":{"@type":"Person","name":"Ali Jarjis"},"@type":"WebPage","url":"http://localhost:4000/404.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ali Jarjis"},"headline":"AJarjis Weird Place","@context":"http://schema.org"}</script>
+{"description":"A “computer scientist” experienced in web and mobile development.","author":{"@type":"Person","name":"Ali Jarjis"},"@type":"WebPage","url":"http://localhost:4000/404.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ali Jarjis"},"headline":"AJarjis Weird Place","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -67,13 +69,6 @@
                     </a>
                 
                     
-                    <a href="/blog" class="nav-item nav-link ">
-                        <i class="fas fa-keyboard"></i> 
-                        Blog
-                        
-                    </a>
-                
-                    
                     <a href="/contact" class="nav-item nav-link ">
                         <i class="fas fa-envelope"></i> 
                         Contact
@@ -84,15 +79,20 @@
         </div>
     </nav>
 </header>
-        <main class="container mb-5 text-center" style="margin-top: 10rem!important;">
+        <main class="container mt-5 mb-5 text-center">
+    <i class="fas fa-exclamation-circle fa-10x" style="color: var(--dark_purple)"></i>
+    <br />
     <h1 class="display-1">404</h1>
     <h3>Looks like you're on the wrong page, let's get you home.</h3>
     <br />
-    <a href="/">
-        <button class="btn btn-primary btn-lg">
-            Home
-        </button>
-    </a>
+    <div class="col-lg-3 m-auto">
+        <a href="/">
+            <button class="btn btn-primary btn-lg btn-block">
+                Home
+            </button>
+        </a>
+    </div>
+
 </main>
         <footer class="container-flex">
     <div class="d-flex justify-content-center">
@@ -120,20 +120,31 @@
     </div>
 
     <!-- Scripts-->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.js" 
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous">
-        </script>
+    </script>
     <script src="/assets/js/isInViewport.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

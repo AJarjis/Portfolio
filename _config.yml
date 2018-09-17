@@ -1,7 +1,7 @@
 # Personal Details
 title: Ali Jarjis
 description: >-
-  # TODO: write a description
+  A "computer scientist" experienced in web and mobile development.
 baseurl: ""
 url: "www.ajarjis.com"
 author:  Ali Jarjis
@@ -24,7 +24,7 @@ lang: en
 timezone: GB
 
 #TODO: add google verification
-google_site_verification: 
+google_site_verification: "JL4lMlN39qAKOuuJhVV4Wc9mgVVXB3TTBkmrAEATVmU"
 
 collections:
   works:

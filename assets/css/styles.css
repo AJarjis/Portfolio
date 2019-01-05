@@ -189,3 +189,9 @@ footer a:focus {
         opacity: 0.5;
     }
 }
+
+/** Makes sure that the recaptcha is centered. */
+div.g-recaptcha {
+    margin: 0 auto;
+    width: 304px;
+}

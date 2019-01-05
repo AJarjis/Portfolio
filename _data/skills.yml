@@ -11,7 +11,7 @@
   info: "Includes experience with Sass and Bootstrap."
 
 - name: Javascript
-  year: 2015
+  year: 2016
   logo: fa-js
   color: "#f1e05a"
   info: "Includes experience with JQuery and Angular."
@@ -20,7 +20,7 @@
   year: 2016
   logo: fa-java
   color: "#b07219"
-  info: "Includes experience with JSP and JUnit."
+  info: "Includes experience with JSP and Android Development."
 
 - name: Python
   year: 2016
@@ -29,7 +29,7 @@
   info: "Includes experience with Django and Flask."
 
 - name: Android
-  year: 2017
+  year: 2018
   logo: fa-android
   color: "#A4C639"
   info: "Includes experience with publishing apps to the Play Store."

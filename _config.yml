@@ -4,7 +4,7 @@ description: >-
   A "computer scientist" experienced in web and mobile development.
 baseurl: ""
 url: "www.ajarjis.com"
-author:  Ali Jarjis
+author: Ali Jarjis
 email: ali-jarjis@hotmail.com
 logo: "/assets/images/logo.png"
 
@@ -12,18 +12,13 @@ social:
   name: Ali Jarjis
   links:
     -https://github.com/AJarjis
-    -https://twitter.com/a_jarjis
     -https://www.linkedin.com/in/ajarjis/
-
-twitter: 
-  username: A_Jarjis
-  card: summary
 
 # Site Specific Details
 lang: en
 timezone: GB
 
-#TODO: add google verification
+# Google verification for tracking site
 google_site_verification: "JL4lMlN39qAKOuuJhVV4Wc9mgVVXB3TTBkmrAEATVmU"
 
 collections:

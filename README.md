@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/de7deca9-5a09-4871-85da-961238e9c17d/deploy-status)](https://app.netlify.com/sites/astar/deploys)
+
 # Portfolio
 
 ## What it does?

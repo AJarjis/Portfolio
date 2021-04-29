@@ -39,3 +39,10 @@ function setUpCoolScrollEffect() {
             .addClass('scroll_visible');
     });
 }
+
+/**
+ * Animation for skill icons
+ */
+$('.icon').hover(
+    function(){$(this).find('.devicon').toggleClass('colored');}
+);

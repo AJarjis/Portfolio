@@ -1,26 +1,15 @@
 <section>
     <h2 class="text-center">SKILLS</h2>
-    <h6 class="text-center">
-        Visit each skill for more details...
-    </h6>
+    <h6 class="text-center">What I've learnt so far...</h6>
     <br />
     <div class="row mx-auto">
         {% for item in site.data.skills %}
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden">
+        <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center p-3 scroll_hidden icon">
             <!-- Icon -->
-            <i class="fab {{ item.logo }} fa-5x" data-toggle="tooltip" data-placement="top" title="{{ item.info }}"
-                onMouseOver="this.style.color='{{item.color}}'" onMouseOut="this.style.color='#1E1E20'"></i>
+            <i class="{{ item.logo }} devicon"></i>
 
             <!-- Icon Name-->
             <h4 class="mt-3">{{ item.name }}</h4>
-
-            <!-- Years of experience with skill -->
-            {% assign current_year = "now" | date: "%Y" %}
-            {% assign experience_length = current_year | minus: item.year %}
-            <h6 class="text-muted">
-                {{ experience_length }}
-                Year{% if experience_length > 1 %}s{% endif %}
-            </h6>
         </div>
         {% endfor %}
     </div>

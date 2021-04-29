@@ -195,3 +195,7 @@ div.g-recaptcha {
     margin: 0 auto;
     width: 304px;
 }
+
+.devicon::before {
+    font-size: 5em;
+}

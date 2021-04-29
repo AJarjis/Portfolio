@@ -1,35 +1,35 @@
 - name: HTML
-  year: 2015
-  logo: fa-html5
-  color: "#e34c26"
-  info: "Includes experience with static site generators (Jekyll)."
+  logo: devicon-html5-plain
 
 - name: CSS
-  year: 2015
-  logo: fa-css3-alt
-  color: "#563d7c"
-  info: "Includes experience with Sass and Bootstrap."
+  logo: devicon-css3-plain
+
+- name: Bootstrap
+  logo: devicon-bootstrap-plain
 
 - name: Javascript
-  year: 2016
-  logo: fa-js
-  color: "#f1e05a"
-  info: "Includes experience with JQuery and Angular."
+  logo: devicon-javascript-plain
+
+- name: Angular
+  logo: devicon-angularjs-plain
+
+- name: TypeScript
+  logo: devicon-typescript-plain
+
+- name: C#
+  logo: devicon-csharp-plain
+
+- name: Dot Net
+  logo: devicon-dot-net-plain
 
 - name: Java
-  year: 2016
-  logo: fa-java
-  color: "#b07219"
-  info: "Includes experience with JSP and Android Development."
-
-- name: Python
-  year: 2016
-  logo: fa-python
-  color: "#3572a5"
-  info: "Includes experience with Django and Flask."
+  logo: devicon-java-plain
 
 - name: Android
-  year: 2018
-  logo: fa-android
-  color: "#A4C639"
-  info: "Includes experience with publishing apps to the Play Store."
+  logo: devicon-android-plain
+
+- name: Azure
+  logo: devicon-windows8-original
+
+- name: Git
+  logo: devicon-git-plain

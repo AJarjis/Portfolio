@@ -1,5 +1,5 @@
 ---
 title: "Prison Voicemail: Android App"
-imagePath: https://pbs.twimg.com/profile_images/1026827878502203392/vMLUwMZz.jpg
+imagePath: /assets/images/works/prisonvoicemail.v1-1-.jpg
 link: https://play.google.com/store/apps/details?id=com.phonehub.prisonvoicemail&hl=en_GB
 ---

@@ -4,17 +4,17 @@
 - name: CSS
   logo: devicon-css3-plain
 
-- name: Bootstrap
-  logo: devicon-bootstrap-plain
-
 - name: Javascript
   logo: devicon-javascript-plain
 
-- name: Angular
-  logo: devicon-angularjs-plain
-
 - name: TypeScript
   logo: devicon-typescript-plain
+
+- name: React
+  logo: devicon-react-plain
+
+- name: Angular
+  logo: devicon-angularjs-plain
 
 - name: C#
   logo: devicon-csharp-plain
@@ -22,11 +22,11 @@
 - name: Dot Net
   logo: devicon-dot-net-plain
 
-- name: Java
-  logo: devicon-java-plain
+- name: Go
+  logo: devicon-go-plain
 
-- name: Android
-  logo: devicon-android-plain
+- name: AWS
+  logo: devicon-amazonwebservices-plain
 
 - name: Azure
   logo: devicon-azure-plain

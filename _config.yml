@@ -1,11 +1,9 @@
-# Personal Details
 title: Ali Jarjis
 subtitle: Software Developer
 description: Highly motivated software developer with a degree in Computer Science. Experienced as both a web & mobile developer; passionate in coding and cooking.
 baseurl: ""
 url: "www.ajarjis.com"
 author: Ali Jarjis
-email: ali-jarjis@hotmail.com
 logo: "/assets/images/logo.png"
 
 social:
@@ -14,12 +12,8 @@ social:
     -https://github.com/AJarjis
     -https://www.linkedin.com/in/ajarjis/
 
-# Site Specific Details
 lang: en
 timezone: GB
-
-# Google verification for tracking site
-google_site_verification: "JL4lMlN39qAKOuuJhVV4Wc9mgVVXB3TTBkmrAEATVmU"
 
 collections:
   works:

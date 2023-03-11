@@ -27,7 +27,7 @@ This site uses a CMS to obtain its contents. To run a CMS ([Netlify](https://www
 $> npx netlify-cms-proxy-server
 ```
 
-Then while the site is running, visit:
+Then while both the CMS and the portfolio site are running, visit:
 http://127.0.0.1:4000/admin
 
 Here you can add, edit or delete the site's content.

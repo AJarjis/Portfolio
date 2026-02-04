@@ -1,35 +1,24 @@
-- name: HTML
-  logo: devicon-html5-plain
-
-- name: CSS
-  logo: devicon-css3-plain
-
-- name: Javascript
-  logo: devicon-javascript-plain
-
-- name: TypeScript
-  logo: devicon-typescript-plain
-
-- name: React
-  logo: devicon-react-plain
-
-- name: Angular
-  logo: devicon-angularjs-plain
-
-- name: C#
-  logo: devicon-csharp-plain
-
-- name: Dot Net
-  logo: devicon-dot-net-plain
 
 - name: Go
   logo: devicon-go-plain
 
+- name: PostgresSQL
+  logo: devicon-postgresql-plain
+
 - name: AWS
   logo: devicon-amazonwebservices-plain
 
-- name: Azure
-  logo: devicon-azure-plain
+- name: Docker
+  logo: devicon-docker-plain
 
-- name: Git
-  logo: devicon-git-plain
+- name: Bash
+  logo: devicon-bash-plain
+
+- name: TypeScript
+  logo: devicon-typescript-plain
+
+- name: VS Code
+  logo: devicon-vscode-plain
+
+- name: Github Actions
+  logo: devicon-githubactions-plain

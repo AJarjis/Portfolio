@@ -11,14 +11,8 @@
 - name: Docker
   logo: devicon-docker-plain
 
-- name: Bash
-  logo: devicon-bash-plain
-
 - name: TypeScript
   logo: devicon-typescript-plain
-
-- name: VS Code
-  logo: devicon-vscode-plain
 
 - name: Github Actions
   logo: devicon-githubactions-plain
